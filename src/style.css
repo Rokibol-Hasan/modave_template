@@ -229,6 +229,9 @@ nav ul li a.nav-link{
 .category-shop .top-grid-two{
   position: relative;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items:end;
 }
 .category-shop .top-grid-two img{
   width: 100%;
@@ -278,3 +281,83 @@ nav ul li a.nav-link{
   font-size: 16px;
   font-weight: 600;
 }
+
+.products ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.products .product-inner{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+  padding: 50px 0px;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.products .product-inner img{
+  width: 100%;
+  display: block;
+  transition: 0.5s;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+}
+.products .product-inner img:hover{
+  transform: scale(1.07);
+}
+.products .product-inner .product-grid-item{
+  padding: 10px;
+  position: relative;
+ 
+}
+.products .product-grid-item a.cart{
+  display: none;
+}
+
+.products .product-grid-item:hover a.cart{
+  display: inline-block;
+  text-align: center;
+  background-color: whitesmoke;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 50px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  z-index: 1;
+}
+ .products .product-details{
+  padding-top: 10px;
+}
+
+.products a.product-grid-link{
+  text-decoration: none;
+  color: var(--normalTextColor);
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.5s;
+  line-height: 2;
+}
+.products .product-grid-link:hover{
+  color: var(--textHoverColor);
+  transition: 0.5s;
+}
+
+.products .product-details p{
+  color: black;
+  font-weight: 600;
+}
+
+
+
+/* product color css */
+
