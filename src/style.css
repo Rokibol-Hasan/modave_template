@@ -1,0 +1,280 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+:root{
+  --titleColor:#181818;
+  --buttonBgColor: #181818;
+  --bg-color: #1f242d;
+  --textHoverColor:#E54B44;
+  --universalBgColor:#181818;
+  --normalTextColor:#777878;
+  --listLinkColor:var(--bg-color);
+
+  --sliderTitleFontSize: 80px;
+  --sliderDescFontSize: 18px;
+
+  --mainTitleSize:40px;
+  --normalTextSize:16px;
+  --productTitleSize: 16px;
+  --productTitleFontWeight: 500;
+  --productPriceSize: 16px;
+  --productPriceFontWeight: 600;
+
+}
+
+
+ul{
+  list-style: none;
+
+}
+ul li{
+  display: inline-block;
+}
+ul li a{
+  text-decoration: none;
+  font-size: var(--normalTextSize);
+  transition: 0.5s;
+}
+ul li a:hover{
+  color: var(--textHoverColor);
+  transition: 0.5s;
+}
+
+
+
+
+
+
+.topbar{
+  border-bottom: 1px solid var(--normalTextColor);
+}
+
+.topbar .topbar-left-icon ul li a{
+  color: var(--normalTextColor);
+  font-size: 25px;
+}
+
+.topbar .topbar-middle ul li a{
+  color: var(--universalBgColor);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+
+
+.topbar .topbar-right-icon ul li a{
+  color: var(--normalTextColor);
+  font-size: 18px;
+}
+.topbar .topbar-right-icon ul li a i{
+  color: var(--buttonBgColor);
+  font-size: 18px;
+}
+
+
+nav{
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+nav.navbar.navbar-expand-lg.shadow-sm {
+  padding: 20px 0px;
+}
+
+nav ul li a.nav-link{
+  color: var(--listLinkColor);
+  font-size: var(--normalTextSize);
+  font-weight: 600;
+}
+
+
+/* Swiper Slider */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ddd;
+  font-size: 24px;
+}
+
+.slider-inner-one{
+  background: url(../public/images/slider-glamDwell2.jpg) no-repeat center/ cover;
+  padding: 170px 300px;
+}
+.slider-inner-two{
+  background: url(../public/images/slider-glamDwell.jpg) no-repeat center/ cover;
+  padding: 170px 300px;
+}
+.slider-inner-three{
+  background: url(../public/images/slider-glamDwell3.jpg) no-repeat center/ cover;
+  padding: 170px 200px;
+}
+
+
+.slider-content{
+  padding: 60px 50px 60px 60px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px -20px;
+}
+
+.slider-content h1.slider-title{
+  font-size: var(--sliderTitleFontSize);
+  color: var(--titleColor);
+  font-weight: 500;
+}
+
+.slider-content .slider-desc{
+  font-size: var(--sliderDescFontSize);
+  color: black;
+  padding: 10px;
+}
+
+.slider-content .slider-button{
+  background-color: var(--buttonBgColor);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.5s;
+  display: inline-block;
+  margin-top: 10px;
+}
+.slider-content .slider-button:hover{
+  background-color: var(--textHoverColor);
+  transition: 0.5s;
+}
+
+.slider-content .slider-button i{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* shop by category */
+
+.category-shop{
+  padding: 50px 0px;
+}
+.category-shop h2{
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.category-shop .cat-grid-one{
+  text-align: center;
+  position: relative;
+  padding: 20px 0px 20px 0px;
+}
+.category-shop .cat-grid-one img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.category-shop .cat-grid-one a{
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 10px 50px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.category-shop .top-grid-one{
+  position: relative;
+  padding: 20px;
+}
+.category-shop .top-grid-one img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+
+}
+
+.category-shop .top-grid-one a{
+  display: inline-block;
+  text-align: center;
+  background-color: whitesmoke;
+  text-decoration: none;
+  color: black;
+  padding: 10px 50px;
+  border-radius: 50px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.category-shop .top-grid-two{
+  position: relative;
+  padding: 20px;
+}
+.category-shop .top-grid-two img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.category-shop .top-grid-two a{
+  display: inline-block;
+  text-align: center;
+  background-color: whitesmoke;
+  text-decoration: none;
+  color: black;
+  padding: 10px 50px;
+  border-radius: 50px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.category-shop .cat-grid-two{
+  text-align: center;
+  position: relative;
+  padding: 20px 0px 20px 0px;
+}
+.category-shop .cat-grid-two img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.category-shop .cat-grid-two a{
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 10px 50px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 600;
+}
