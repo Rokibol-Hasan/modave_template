@@ -45,11 +45,9 @@
 
 ul{
   list-style: none;
+  padding-left: 0px !important;
+}
 
-}
-ul li{
-  display: inline-block;
-}
 ul li a{
   text-decoration: none;
   font-size: var(--normalTextSize);
@@ -623,15 +621,80 @@ section.shop-insta{
 }
 
 
+.shop-insta hr{
+  margin: 70px 0px 20px 0px;
+}
+
 /* Footer */
 
-.footer{
+.footer-widget .footer-logo{
+  width: 100%;
+}
+.footer-widget .widget-one-desc{
+  padding-top: 10px;
+}
+.footer-widget .widget-one-desc p{
+  margin: 5px 0px;
+}
+.footer-widget .widget-one-desc a{
+  text-transform: uppercase;
+  color: black;
+  font-size: 14px;
+  text-decoration: underline;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.footer-widget .widget-one-desc .mail,.phone{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.footer-widget .widget-one-desc .contact-icon{
+  padding: 10px 0px;
+}
+.footer-widget .widget-one-desc .mail i,.phone i{
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.footer-widget .footer-icon .f-icon-list{
+  display: flex;
+  gap:20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.footer-widget .footer-icon .f-icon-list i{
+  border: 1px solid gray;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+
+.footer-widget .widget-title{
+  font-size: 16px;
+  font-weight: 600;
 
 }
 
-footer .footer-inner{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,2fr 1fr 1fr 2fr);
+.footer-widget .widget-nav{
+  padding-top: 5px;
 }
+
+
+.footer-widget .widget-nav ul li a{
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgb(151, 151, 151);
+  font-weight: 400;
+}
+
+
 
 
