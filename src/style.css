@@ -536,7 +536,7 @@ nav ul li a.nav-link{
 /* Features */
 
 .features{
-  padding: 50px 0px;
+  padding: 40px 0px 0px 0px;
 }
 .features .feature-inner{
   display: flex;
@@ -635,6 +635,7 @@ section.shop-insta{
 }
 .footer-widget .widget-one-desc p{
   margin: 5px 0px;
+  font-size: 14px;
 }
 .footer-widget .widget-one-desc a{
   text-transform: uppercase;
@@ -648,7 +649,7 @@ section.shop-insta{
 .footer-widget .widget-one-desc .mail,.phone{
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 14px;
 }
 .footer-widget .widget-one-desc .contact-icon{
   padding: 10px 0px;
@@ -680,7 +681,13 @@ section.shop-insta{
 .footer-widget .widget-title{
   font-size: 16px;
   font-weight: 600;
-
+  color: var(--normalTextColor);
+}
+.footer-widget .widget-title p{
+  font-size: 14px;
+  line-height: 1.8;
+  color: rgb(151, 151, 151);
+  font-weight: 300;
 }
 
 .footer-widget .widget-nav{
@@ -689,10 +696,76 @@ section.shop-insta{
 
 
 .footer-widget .widget-nav ul li a{
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.8;
   color: rgb(151, 151, 151);
-  font-weight: 400;
+  font-weight: 300;
+}
+
+.footer-widget .newsletter-input .mail-input{
+  margin-bottom: 15px;
+  position: relative;
+}
+.footer-widget .newsletter-input .mail-input input{
+  width: 100%;
+  padding: 15px 15px 15px 15px;
+  border: 1px solid var(--normalTextColor);
+  border-radius: 50px;
+  outline: none;
+
+}
+.footer-widget .newsletter-input .mail-input button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 55px;
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  border-radius: 50px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+.footer-widget .newsletter-input .checkbox{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  
+}
+
+.footer-widget .newsletter-input .checkbox span{
+  font-size: 14px;
+  color: var(--normalTextColor);
+}
+.footer-widget .newsletter-input .checkbox a{
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--normalTextColor);
+}
+/* footer bottom */
+.footer-bottom{
+  padding: 20px 0px;
+}
+.copyright p{
+  margin: 0px;
+  font-size: 14px;
+  color: var(--normalTextColor);
+  
+}
+
+.footer-bottom-icon{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+.footer-bottom-icon img{
+  width: 50px;
 }
 
 
