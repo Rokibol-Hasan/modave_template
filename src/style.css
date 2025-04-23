@@ -28,6 +28,20 @@
 
 }
 
+.section-title{
+  padding: 20px 0px;
+  text-align: center;
+}
+.section-title h2{
+  font-size: 40px;
+  color: var(--normalTextColor);
+  font-weight: 600;
+}
+.section-title p{
+  font-size: 16px;
+  color: gray;
+}
+
 
 ul{
   list-style: none;
@@ -94,52 +108,53 @@ nav ul li a.nav-link{
 
 
 /* Swiper Slider */
-.swiper {
+ .hero .swiper {
   width: 100%;
   height: 100%;
 }
-.swiper-slide {
+.hero .swiper .swiper-wrapper .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
   background: #ddd;
   font-size: 24px;
+  display: block;
 }
 
-.slider-inner-one{
+.hero .slider-inner-one{
   background: url(../public/images/slider-glamDwell2.jpg) no-repeat center/ cover;
   padding: 170px 300px;
 }
-.slider-inner-two{
+.hero .slider-inner-two{
   background: url(../public/images/slider-glamDwell.jpg) no-repeat center/ cover;
   padding: 170px 300px;
 }
-.slider-inner-three{
+.hero .slider-inner-three{
   background: url(../public/images/slider-glamDwell3.jpg) no-repeat center/ cover;
-  padding: 170px 200px;
+  padding: 170px 300px;
 }
 
 
-.slider-content{
+.hero .slider-content{
   padding: 60px 50px 60px 60px;
   background-color: white;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px -20px;
 }
 
-.slider-content h1.slider-title{
+.hero .slider-content h1.slider-title{
   font-size: var(--sliderTitleFontSize);
   color: var(--titleColor);
   font-weight: 500;
 }
 
-.slider-content .slider-desc{
+.hero .slider-content .slider-desc{
   font-size: var(--sliderDescFontSize);
   color: black;
   padding: 10px;
 }
 
-.slider-content .slider-button{
+.hero .slider-content .slider-button{
   background-color: var(--buttonBgColor);
   color: white;
   font-size: 16px;
@@ -151,12 +166,12 @@ nav ul li a.nav-link{
   display: inline-block;
   margin-top: 10px;
 }
-.slider-content .slider-button:hover{
+.hero .slider-content .slider-button:hover{
   background-color: var(--textHoverColor);
   transition: 0.5s;
 }
 
-.slider-content .slider-button i{
+.hero .slider-content .slider-button i{
   display: inline-block;
   margin-left: 10px;
 }
@@ -309,7 +324,8 @@ nav ul li a.nav-link{
 .product-inner{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
+  grid-row-gap: 30px;
+  grid-column-gap: 20px;
 }
 
 /* Ensure wrapper controls image & banner layout */
@@ -426,4 +442,196 @@ nav ul li a.nav-link{
   transition: 0.5s;
   padding: 10px;
 }
+
+.products .view-all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products a.view-products{
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin-top: 40px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 3px solid var(--normalTextColor);
+}
+
+/* Banner lookbook section */
+.banner-lookbook{
+  padding: 50px 0px;
+}
+.banner-lookbook .look-book-inner{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.banner-lookbook .look-book-inner a img{
+  width: 100%;
+}
+
+/* customer testimonial */
+
+.customer-testimonial{
+  padding: 50px 0px;
+}
+
+.customer-testimonial .swiper-wrapper{
+  margin-bottom: 50px;
+}
+/* .customer-testimonial .swiper-wrapper .swiper-slide {
+  background-color: none !important;
+} */
+
+.customer-testimonial .tes-slider-inner{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 10px;
+}
+
+
+.customer-testimonial .tes-slider-inner .tes-left img{
+  width: 100%;
+}
+
+.customer-testimonial .tes-slider-inner .tes-right{
+  padding: 20px 20px 0px 20px;
+}
+.customer-testimonial .tes-slider-inner .tes-right p{
+  font-size: 16px;
+  color: gray;
+  margin: 0;
+  line-height: 1.5;
+
+}
+.customer-testimonial .tes-slider-inner .tes-right i.bi-star-fill{
+  font-size: 14px;
+  color: gold;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.customer-testimonial .tes-slider-inner .tes-right .tes-name i.bi-star-fill{
+  color: green;
+
+}
+
+.customer-testimonial .tes-slider-inner .tes-right .tes-customer-product{
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+.customer-testimonial .tes-slider-inner .tes-right .tes-customer-product img{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+.customer-testimonial .tes-slider-inner .tes-right .tes-customer-product p{
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--normalTextColor);
+}
+
+/* Features */
+
+.features{
+  padding: 50px 0px;
+}
+.features .feature-inner{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.features .feature-inner .feature-icon{
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-right: 10px;
+}
+.features .feature-inner .feature-icon i{
+  font-size: 40px;
+  color: var(--normalTextColor);
+
+}
+
+.features .feature-inner .feature-desc h4{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--normalTextColor);
+}
+.features .feature-inner .feature-desc  p{
+  font-size: 16px;
+  color: var(--normalTextColor);
+}
+
+section.features hr{
+  margin-top: 70px;
+}
+
+
+/* shop instagram */
+
+section.shop-insta{
+  padding: 50px 0px;
+}
+
+.shop-insta .shop-insta-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+.insta-post {
+  position: relative;
+  overflow: hidden;
+}
+.shop-insta-inner .insta-post img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.insta-post a {
+  display: block;
+  position: relative;
+}
+
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(23, 74, 109, 0.6); /* Adjust overlay color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+.hover-overlay i {
+  color: #fff;
+  font-size: 32px;
+}
+
+.insta-post:hover .hover-overlay {
+  opacity: 1;
+}
+
+
+/* Footer */
+
+.footer{
+
+}
+
+footer .footer-inner{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,2fr 1fr 1fr 2fr);
+}
+
 

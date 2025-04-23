@@ -1,7 +1,4 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -21,6 +18,17 @@ const swiper = new Swiper('.mySwiper', {
   spaceBetween: 30,
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
+
+var swiper2 = new Swiper(".swiper-two", {
+  loop: true,
+  slidesPerView: 2,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
     clickable: true,
   },
 });
