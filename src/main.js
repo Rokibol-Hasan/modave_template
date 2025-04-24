@@ -9,6 +9,11 @@ import 'swiper/css/pagination';
 
 import { Pagination } from 'swiper/modules';
 
+// index css
+import './pages/index.css';
+// single css 
+import './pages/single.css';
+
 // Configure Swiper to use modules
 Swiper.use([Pagination]);
 
