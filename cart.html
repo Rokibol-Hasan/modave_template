@@ -117,32 +117,63 @@
         </div>
       </nav>
     </header>
+
     <main>
-      <section class="page-title">
+      <section class="page-banner">
         <div class="container">
-          <h3 class="heading text-center">Shopping Cart</h3>
-          <div class="breadcrumb">
-            <div class="container">
-              <div class="row">
-                <div class="col-12">
-                  <div class="breadcrumb-content">
-                    <nav aria-label="breadcrumb">
-                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Product</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">
-                          Single Product
-                        </li>
-                      </ol>
-                    </nav>
-                  </div>
-                </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="page-banner-content">
+                <h2>Cart</h2>
+                <nav
+                  aria-label="breadcrumb"
+                  class="d-flex justify-content-center"
+                >
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Cart
+                    </li>
+                  </ol>
+                </nav>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section class="order">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="order-items p-4">
+                <div class="promo text-left p-3 bg-light rounded">
+                  <i class="bi bi-fire text-danger me-2"></i
+                  ><span
+                    >Your cart will expire in <strong class="text-danger">00:00 </strong>00:00 minutes! Please checkout now
+                    before your items sell out!</span
+                  >
+                </div>
+
+                <div class="progress-section">
+                    <div class="progress-title p-3">
+                        <span>Buy <strong class="text-danger">$70.00</strong> more to get <strong>Freeship</strong></span>
+
+                        <div class="progress-line-full">
+                            <div class="progress-line"></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="order-summary"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
     <footer>
       <div class="container">
         <div class="row">
