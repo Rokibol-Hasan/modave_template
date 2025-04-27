@@ -1,5 +1,5 @@
 .breadcrumb {
-  padding: 10px 0px;
+  padding: 20px 0px 10px 0px;
 }
 
 .breadcrumb nav ol li a,
@@ -12,12 +12,14 @@ li {
 .breadcrumb nav ol li.active {
   text-decoration: underline;
 }
-
+.breadcrumb nav{
+    box-shadow: none;
+}
 /* product description */
 
 /* left column */
 section.product {
-  padding: 40px 0px 40px 0px;
+  padding: 0px 0px 40px 0px;
 }
 .small-image-inner {
   display: flex;
@@ -378,3 +380,64 @@ a {
 .product-content .product-payment .product-payment-images img{
     width: 50px;
 }
+
+
+/* product description */
+.product-description{
+    padding: 40px 0px;
+}
+.product-description ul.nav{
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .product-description ul li a{
+    text-decoration: none;
+    color: #181818;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .product-description ul li a:hover{
+    border-bottom: 3px solid var(--normalTextColor);
+    text-decoration: none;
+    color: black;
+  }
+  .product-description-inner p.description-title{
+    font-size: 14px;
+    text-transform: uppercase;
+
+  }
+  .product-description-inner p.description-text{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #656565;
+  }
+  .product-description .description-list ul{
+    list-style-type: disc;
+  }
+
+
+  /* recent product */
+  .
+  .recent-product ul.nav{
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .recent-product ul li a{
+    text-decoration: none;
+    color: #181818;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .recent-product ul li a:hover{
+    border-bottom: 3px solid var(--normalTextColor);
+    text-decoration: none;
+    color: black;
+  }
