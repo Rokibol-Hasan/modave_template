@@ -119,19 +119,226 @@
     </header>
 
     <main>
-        <section class="checkout-details">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6"> dssfa</div>
-                <div class="col-md-1">
-                    <div class="line">
+      <section class="page-banner">
+        <div class="banner-content">
+          <p class="page-title">Check Out</p>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+          </nav>
+        </div>
+      </section>
 
+      <section class="main-info">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="personal-info">
+                <div class="pre-login">
+                  <p>Already have an account?</p>
+                  <a href="">Login Here</a>
+                </div>
+
+                <div class="login-form">
+                  <form action="">
+                    <div class="input-field-grid">
+                      <input
+                        class="style-input"
+                        type="email"
+                        placeholder="Enter Email here"
+                      />
+                      <input
+                        class="style-input"
+                        type="password"
+                        placeholder="Password"
+                      />
                     </div>
+                    <div class="login-button">
+                      <a href="">Login</a>
+                    </div>
+                  </form>
                 </div>
-                <div class="col-md-6">  sdfsadfd</div>
+
+                <div class="registration">
+                  <div class="form-title">Registration</div>
+                  <form action="">
+                    <div class="input-field-grid">
+                      <input
+                        class="style-input"
+                        type="text"
+                        placeholder="First Name"
+                      />
+                      <input
+                        class="style-input"
+                        type="text"
+                        placeholder="Last Name"
+                      />
+                    </div>
+
+                    <div class="input-field-grid">
+                      <input
+                        class="style-input"
+                        type="email"
+                        placeholder="Email Address"
+                      />
+                      <input
+                        class="style-input"
+                        type="number"
+                        placeholder="Phone Number"
+                      />
+                    </div>
+
+                    <div class="selection">
+                      <select name="" id="">
+                        <option value="">Select Country</option>
+                        <option value="">Bangladesh</option>
+                        <option value="">India</option>
+                        <option value="">Pakistan</option>
+                        <option value="">Nepal</option>
+                      </select>
+                    </div>
+
+                    <div class="input-field-grid">
+                      <input
+                        class="style-input"
+                        type="text"
+                        placeholder="Town/City*"
+                      />
+
+                      <input
+                        class="style-input"
+                        type="text"
+                        placeholder="Street"
+                      />
+                    </div>
+
+                    <div class="input-field-grid">
+                      <select class="style-input" name="" id="">
+                        <option value="">Select City</option>
+                        <option value="">Dhaka</option>
+                        <option value="">Chittagong</option>
+                        <option value="">Khulna</option>
+                        <option value="">Rajshahi</option>
+                      </select>
+                      <input
+                        class="style-input"
+                        type="number"
+                        placeholder="Postal Code"
+                      />
+                    </div>
+
+                    <div class="message">
+                      <textarea name="" id="" rows="4">Write Note...</textarea>
+                    </div>
+                  </form>
                 </div>
+
+                <div class="payment-info">
+                  <div class="form-title">Choose payment Option:</div>
+
+                  <div class="card-section">
+                    <div class="credit-card">
+                      <form action="">
+                        <label for="">
+                          <input type="radio" />
+                          <span class="credit-span">Credit Card</span>
+                        </label>
+                        <div class="c-info">
+                          Make your payment directly into our bank account. Your
+                          order will not be shipped until the funds have cleared
+                          in our account.
+                        </div>
+  
+                        <div class="card-info">
+                          <input
+                            class="style-input"
+                            type="text"
+                            placeholder="Name On Card"
+                          />
+  
+                          <div class="card-numbers">
+                            <input
+                            class="style-input"
+                            type="text"
+                            placeholder="Card Numbers"
+                          />
+  
+                          <div class="payment-images">
+                            <img src="./public/images/payment/img-1.png" alt="" />
+                            <img src="./public/images/payment/img-2.png" alt="" />
+                            <img src="./public/images/payment/img-3.png" alt="" />
+                          </div>
+                          </div>
+                          
+                          <div class="cvc">
+                            <input
+                              class="style-input"
+                              type="date"
+                              placeholder="MM/YY"
+                            />
+                            <input
+                              class="style-input"
+                              type="text"
+                              placeholder="CVC"
+                            />
+                          </div>
+
+                          <div class="checkbox">
+                            <input type="checkbox" />
+                            <span class="save">Save Card Details</span>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  
+                  <div class="cod">
+                    <label for="">
+                      <input  type="radio" />
+                      <span class="cod-span">Cash On Delivery</span>
+                    </label>
+                  </div>
+
+                  <div class="apple-pay">
+                    <label for="" class="apple-pay-label">
+                      <input type="radio" />
+                      <div class="company-name">
+                        <img src="./public/images/payment/applePay.png" alt="" />
+                        <span class="credit-span">Apple Pay</span>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="paypal">
+                    <label for="" class="apple-pay-label">
+                      <input type="radio" />
+                      <div class="company-name">
+                        <img class="paypal-img" src="./public/images/payment/paypal.png" alt="" />
+                  
+                      </div>
+                    </label>
+                  </div>
+
+
+                  <div class="pay-btn">
+                    <a href="">Payment</a>
+                  </div>
+
+
+                </div>
+              </div>
             </div>
-        </section>
+            <div class="col-md-1">
+              <div class="line"></div>
+            </div>
+            <div class="col-md-5"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="border-top pt-5">
