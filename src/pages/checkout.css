@@ -256,7 +256,7 @@ img.paypal-img{
 /* shopping card section */
 
 .shopping-cart-inner{
-    padding: 80px 0px;
+    padding: 80px 0px 20px 0px;
 }
 p.shopping-cart-title{
     font-size: 24px;
@@ -307,5 +307,138 @@ p.shopping-cart-title{
     font-weight: 600;
 
 }
+
+/* coupon option */
+.apply-coupon{
+    padding: 0px 0px;
+    position: relative;
+  }
+  .apply-coupon input{
+    padding: 10px 10px;
+    width: 100%;
+    border: 1px solid #b1b1b1;
+    border-radius: 10px;
+
+  }
+  .apply-coupon input:focus{
+    outline: none;
+    
+  }
+
+  .apply-coupon button.code{
+    border: none;
+    padding: 6px 30px;
+    position: absolute;
+    bottom: 13px;
+    right: 5px;
+    background-color: black;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+  }
+
+
+  .coupon-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    gap: 20px;
+    align-content: start;
+  }
+  .coupon-inner{
+    border: 1px solid #b1b1b1;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0px;
+    font-size: 14px;
+    position: relative;
+    
+  }
+
+  .coupon-inner.active{
+   border: 1px solid #E43131;
+   background-color:#e4313108;
+    
+  }
+  .coupon-inner.active .coupon-code{
+   border-top: 2px dashed #E43131;
+    
+  }
+
+  .coupon-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  .coupon-code{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px dashed #b1b1b1;
+
+  }
+
+  .apply-btn button.apply{
+    border: none;
+    border-radius: 30px;
+    padding: 3px 10px;
+    background-color: black;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .coupon-inner:hover{
+    border: 1px solid #E43131;
+    background-color: #e4313108;
+     
+   }
+   .coupon-inner:hover .coupon-code{
+    border-top: 2px dashed #E43131;
+     
+   }
+
+.checkout-total{
+    padding: 10px 0px;
+}
+.checkout-total .shipping{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout-total .shipping span{
+    font-size: 18px;
+    color: var(--normalTextColor);
+    font-weight: 600;
+}
+
+.checkout-total .discounts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout-total .discounts span{
+    font-size: 18px;
+    color: var(--normalTextColor);
+    font-weight: 600;
+}
+.checkout-total .total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout-total .total span{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+
+
 
 
